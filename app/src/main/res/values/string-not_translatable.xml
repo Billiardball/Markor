@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+A project by Gregor Santner (https://gsantner.net)
+
+To the extent possible under law, the person who associated CC0 with
+this file has waived all copyright and related or neighboring rights
+to the public domain.
+
+You should have received a copy of the CC0 legalcode along with this
+work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
+-->
+<resources>
+    <string name="app_name_real">Markor</string>
+    <string name="app_name" translatable="false">@string/app_name_real</string>
+    <string name="app_license_name" translatable="false">Apache 2.0</string>
+    <string name="app_community_url" translatable="false">https://matrix.to/#/#markor:matrix.org</string>
+    <string name="app_bugreport_url" translatable="false">https://github.com/gsantner/markor/issues</string>
+    <string name="app_translate_url" translatable="false">https://crowdin.com/project/markor/invite</string>
+    <string name="app_web_url" translatable="false">https://gsantner.net/project/markor.html?source=inapp</string>
+    <string name="app_source_code_url" translatable="false">https://github.com/gsantner/markor</string>
+    <string name="app_donate_url" translatable="false"><![CDATA[https://gsantner.net/page/supportme.html?project=markor&source=inapp_supdon]]></string>
+    <string name="app_contribution_info_url" translatable="false">https://github.com/gsantner/markor/blob/master/README.md#contributions</string>
+    <string name="more_info_on_how_to_donate_or_otherwise_support_this_project" translatable="false">@string/more_info_on_how_to_donate_or_otherwise_support_this_project_text</string>
+    <string name="donate_" translatable="false">@string/donate</string>
+    <string name="app_contact_email_reverse" translatable="false">gro.xobliam@kcabdeef+rentnasg</string>
+
+
+    <string name="checkmark_symbol" translatable="false">\u2301</string>
+    <string name="bookmark_symbol" translatable="false">\u2605</string>
+    <string name="lightning_symbol" translatable="false">\u2714</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="share_html__mime_html" translatable="false">HTML</string>
+    <string name="pdf" translatable="false">PDF</string>
+    <string name="markdown" translatable="false">Markdown</string>
+
+    <string name="community" translatable="false">Community</string>
+    <string name="default_font_family" translatable="false">sans-serif-regular</string>
+    <string name="quicknote" translatable="false">QuickNote</string>
+    <string name="todo" translatable="false">To-Do</string>
+    <string name="todo_txt" translatable="false">todo.txt</string>
+    <string name="quicknote_default_filename" translatable="false">QuickNote.md</string>
+    <string name="todo_default_filename" translatable="false">todo.txt</string>
+    <string name="web_browser" translatable="false">Web browser</string>
+    <string name="app_drawer_launcher_special_files_description" translatable="false">App drawer launchers - To-Do, QuickNote</string>
+
+    <string name="category_to_context_project_to_tag" translatable="false">%1$s -> %2$s, %3$s -> %4$s</string>
+    <string name="katex_latex" translatable="false">KaTex (LaTex)\n$ a^2 + b^2 = c^2 $</string>
+    <string name="app_theme_light" translatable="false">light</string>
+    <string name="app_theme_dark" translatable="false">dark</string>
+    <string name="app_theme_auto" translatable="false">auto</string>
+    <string name="editor_basic_color_scheme_markor" translatable="false">Markor</string>
+    <string name="editor_basic_color_scheme_black_or_white" translatable="false">Black or White</string>
+    <string name="editor_basic_color_scheme_amoled" translatable="false">AMOLED</string>
+    <string name="editor_basic_color_scheme_solarized" translatable="false">Solarized</string>
+    <string name="editor_basic_color_scheme_gruvbox" translatable="false">Gruvbox</string>
+    <string name="editor_basic_color_scheme_greenscale" translatable="false">Greenscale</string>
+    <string name="editor_basic_color_scheme_sepia" translatable="false">Sepia</string>
+
+    <string name="auto" translatable="false">Auto</string>
+    <string name="hexcode" translatable="false">Hexcode</string>
+    <string name="markup_formats_supported_list" translatable="false">Markdown, todo.txt, Plaintext</string>
+
+
+    <string name="sync_to_local_folder_notice_paths" translatable="false"><![CDATA[
+    <b>Dropbox:</b> Android/data/com.dropbox.android/files/u123456/scratch/
+    \n<b>Own/NextCloud:</b> %s]]></string>
+
+
+    <!-- About Screen -->
+    <string name="copyright_license_text_official" translatable="false"><![CDATA[
+        ### Copyright © 2017-2019
+        **Gregor Santner**
+        \n**Official project sources:**
+        [Website](https://gsantner.net/index.html?source=inapp_license_official_project_source) | [Source code](https://github.com/gsantner/markor) | [F-Droid](https://f-droid.org/repository/browse/?fdid=net.gsantner.markor) | [Google Play](https://play.google.com/store/apps/details?id=net.gsantner.markor)
+    ]]></string>
+
+    <string name="inject_to_head" translatable="false">Inject -> head</string>
+    <string name="inject_to_body" translatable="false">Inject -> body</string>
+    <string name="js_css" translatable="false"><![CDATA[html: <head>CSS, JavaScript</head>]]></string>
+    <string name="inject_to_head_default" translatable="false"><![CDATA[
+    <style>
+    \nhtml,body {
+    \n  /*font-family: sans-serif-condensed;*/
+    \n  /*font-size: 80%;*/
+    \n}
+    \n</style>
+    \n
+    \n
+    \n<script type=\"text/javascript\">
+    \nfunction onPageLoaded(){
+    \n
+    \n/*if (\'{{ post.text_converter_name }}\' == \'MarkdownTextConverter\') {
+    \n  window.scrollTo(0,document.body.scrollHeight);
+    \n}*/
+    \n
+    \n}
+    \n</script>
+    ]]></string>
+
+
+    <plurals name="item_selected" translatable="false">
+        <item quantity="one" translatable="false">@string/one_item_selected</item>
+        <item quantity="other" translatable="false">@string/items_selected_witharg</item>
+    </plurals>
+
+    <plurals name="documents" translatable="false">
+        <item quantity="one" translatable="false">@string/document</item>
+        <item quantity="other" translatable="false">@string/documents</item>
+    </plurals>
+    <string name="tag" translatable="false">Tag</string>
+    <string name="tags" translatable="false">Tags</string>
+    <string name="dotfiles" translatable="false">.dotfiles</string>
+    <string name="tagging" translatable="false">Tagging</string>
+
+
+    <!--
+        Preference keys
+     -->
+    <string name="pref_key__markdown__hl_delay_v2" translatable="false">pref_key__markdown__hl_delay_v2</string>
+    <string name="pref_key__quicknote_filepath" translatable="false">pref_key__quicknote_filepath</string>
+    <string name="pref_key__markdown__highlight_lineending_two_or_more_space" translatable="false">pref_key__markdown__highlight_lineending_two_or_more_space</string>
+    <string name="pref_key__markdown__monospace_some_parts" translatable="false">pref_key__markdown__monospace_some_parts</string>
+    <string name="pref_key__todotxt__hl_delay" translatable="false">pref_key__todotxt__hl_delay</string>
+    <string name="pref_key__todo_filepath" translatable="false">pref_key__todo_filepath</string>
+    <string name="pref_key__todotxt__start_new_tasks_with_todays_date" translatable="false">pref_key__todotxt__start_new_tasks_with_todays_date</string>
+    <string name="pref_key__todotxt__append_contexts_and_projects_on_end_of_task" translatable="false">pref_key__todotxt__append_contexts_and_projects_on_end_of_task</string>
+    <string name="pref_key__todotxt__last_used_archive_filename" translatable="false">pref_key__todotxt__last_used_archive_filename</string>
+    <string name="pref_key__todotxt__alternative_naming_context_project" translatable="false">pref_key__todotxt__alternative_naming_context_project</string>
+    <string name="pref_key__is_preview_first" translatable="false">pref_key__is_preview_first</string>
+    <string name="pref_key__is_render_rtl" translatable="false">pref_key__is_render_rtl</string>
+    <string name="pref_key__is_highlighting_activated" translatable="false">pref_key__is_highlighting_activated</string>
+    <string name="pref_key__load_last_directory_at_startup" translatable="false">pref_key__load_last_directory_at_startup</string>
+    <string name="pref_key__notebook_directory" translatable="false">pref_key__notebook_directory</string>
+    <string name="pref_key__last_opened_directory" translatable="false">pref_key__last_opened_directory</string>
+    <string name="pref_key__font_family" translatable="false">pref_key__font_family</string>
+    <string name="pref_key__editor_font_size" translatable="false">pref_key__editor_font_size</string>
+    <string name="pref_key__app_theme" translatable="false">pref_key__app_theme</string>
+    <string name="pref_key__is_editor_statusbar_hidden" translatable="false">pref_key__is_editor_statusbar_hidden</string>
+    <string name="pref_key__is_overview_statusbar_hidden" translatable="false">pref_key__is_overview_statusbar_hidden</string>
+    <string name="pref_key__language" translatable="false">pref_key__language</string>
+    <string name="pref_key__is_main_recreate_required" translatable="false">pref_key__is_main_recreate_required</string>
+    <string name="pref_key__sort_method" translatable="false">pref_key__sort_method</string>
+    <string name="pref_key__sort_reverse" translatable="false">pref_key__sort_reverse</string>
+    <string name="pref_key__is_highlighting_for_hexcolor_activated" translatable="false">pref_key__is_highlighting_for_hexcolor_activated</string>
+    <string name="pref_key__app_first_start_current_version" translatable="false">pref_key__app_first_start_current_version</string>
+    <string name="pref_key__editor_line_spacing" translatable="false">pref_key__editor_line_spacing</string>
+    <string name="pref_key__editor_start_editing_on_bottom" translatable="false">pref_key__editor_start_editing_on_bottom</string>
+    <string name="pref_key__editor_start_editing_in_center" translatable="false">pref_key__editor_start_editing_in_center</string>
+    <string name="pref_key__share_into__quicknote" translatable="false">pref_key__share_into__quicknote</string>
+    <string name="pref_key__share_into__todo" translatable="false">pref_key__share_into__todo</string>
+    <string name="pref_key__share_into__clipboard" translatable="false">pref_key__share_into__clipboard</string>
+    <string name="pref_key__share_into__existing_document" translatable="false">pref_key__share_into__existing_document</string>
+    <string name="pref_key__share_into__create_document" translatable="false">pref_key__share_into__create_document</string>
+    <string name="pref_key__share_into__reshare" translatable="false">pref_key__share_into__reshare</string>
+    <string name="pref_key__share_into__calendar_event" translatable="false">pref_key__share_into__calendar_event</string>
+    <string name="pref_key__more_info__settings" translatable="false">pref_key__more_info__settings</string>
+    <string name="pref_key__more_info__source_code" translatable="false">pref_key__more_info__source_code</string>
+    <string name="pref_key__more_info__project_license" translatable="false">pref_key__more_info__project_license</string>
+    <string name="pref_key__more_info__open_source_licenses" translatable="false">pref_key__more_info__open_source_licenses</string>
+    <string name="pref_key__more_info__bug_reports" translatable="false">pref_key__more_info__bug_reports</string>
+    <string name="pref_key__more_info__help" translatable="false">pref_key__more_info__help</string>
+    <string name="pref_key__more_info__rate_app" translatable="false">pref_key__more_info__rate_app</string>
+    <string name="pref_key__more_info__translate" translatable="false">pref_key__more_info__translate</string>
+    <string name="pref_key__more_info__join_community" translatable="false">pref_key__more_info__join_community</string>
+
+    <string name="pref_key__more_info__app" translatable="false">pref_key__more_info__app</string>
+    <string name="pref_key__more_info__donate" translatable="false">pref_key__more_info__donate</string>
+    <string name="pref_key__more_info__project_contribution_info" translatable="false">pref_key__more_info__project_contribution_info</string>
+    <string name="pref_key__more_info__project_community" translatable="false">pref_key__more_info__project_community</string>
+    <string name="pref_key__more_info__project_team" translatable="false">pref_key__more_info__project_team</string>
+    <string name="pref_key__more_info__contributors_public_info" translatable="false">pref_key__more_info__contributors_public_info</string>
+    <string name="pref_key__more_info__copy_build_information" translatable="false">pref_key__more_info__copy_build_information</string>
+    <string name="pref_key__editor_textaction_bar_item_padding" translatable="false">pref_key__editor_textaction_bar_item_padding</string>
+    <string name="pref_key__editor_disable_spelling_red_underline" translatable="false">pref_key__editor_disable_spelling_red_underline</string>
+    <string name="pref_key__editor_markdown_bigger_headings_2" translatable="false">pref_key__editor_markdown_bigger_headings_2</string>
+    <string name="pref_key__recent_documents" translatable="false">pref_key__recent_documents</string>
+    <string name="pref_key__popular_documents" translatable="false">pref_key__popular_documents</string>
+    <string name="pref_key__favourite_files" translatable="false">pref_key__favourite_files</string>
+    <string name="pref_key__share_into__open_in_browser" translatable="false">pref_key__share_into__open_in_browser</string>
+    <string name="pref_key__inject_to_head" translatable="false">pref_key__inject_to_head</string>
+    <string name="pref_key__inject_to_body" translatable="false">pref_key__inject_to_body</string>
+    <string name="pref_key__markdown_render_math" translatable="false">pref_key__markdown_render_math</string>
+    <string name="pref_key__markdown_show_toc" translatable="false">pref_key__markdown_show_toc</string>
+    <string name="pref_key__is_launcher_for_special_files_enabled" translatable="false">pref_key__is_launcher_for_special_files_enabled</string>
+    <string name="pref_key__editor_basic_color_scheme__bg_light" translatable="false">pref_key__editor_basic_color_scheme__bg_light</string>
+    <string name="pref_key__editor_basic_color_scheme__fg_light" translatable="false">pref_key__editor_basic_color_scheme__fg_light</string>
+    <string name="pref_key__editor_basic_color_scheme__bg_dark" translatable="false">pref_key__editor_basic_color_scheme__bg_dark</string>
+    <string name="pref_key__editor_basic_color_scheme__fg_dark" translatable="false">pref_key__editor_basic_color_scheme__fg_dark</string>
+    <string name="pref_key__editor_basic_color_scheme_solarized" translatable="false">pref_key__editor_basic_color_scheme_solarized</string>
+    <string name="pref_key__editor_basic_color_scheme_blackorwhite" translatable="false">pref_key__editor_basic_color_scheme_blackorwhite</string>
+    <string name="pref_key__editor_basic_color_scheme_amoled" translatable="false">pref_key__editor_basic_color_scheme_amoled</string>
+    <string name="pref_key__editor_basic_color_scheme_markor" translatable="false">pref_key__editor_basic_color_scheme_markor</string>
+    <string name="pref_key__editor_basic_color_scheme_gruvbox" translatable="false">pref_key__editor_basic_color_scheme_gruvbox</string>
+    <string name="pref_key__editor_basic_color_scheme_greenscale" translatable="false">pref_key__editor_basic_color_scheme_greenscale</string>
+    <string name="pref_key__editor_basic_color_scheme_sepia" translatable="false">pref_key__editor_basic_color_scheme_sepia</string>
+    <string name="pref_key__is_keep_screen_on" translatable="false">pref_key__keep_screen_on</string>
+
+    <string name="tmaid_common_delete_lines" translatable="false">tmaid_common_delete_lines</string>
+    <string name="tmaid_common_attach_something" translatable="false">tmaid_common_attach_something</string>
+    <string name="tmaid_common_unordered_list_hyphen" translatable="false">tmaid_common_unordered_list_hyphen</string>
+    <string name="tmaid_common_ordered_list_number" translatable="false">tmaid_common_ordered_list_number</string>
+    <string name="tmaid_common_checkbox_list" translatable="false">tmaid_common_checkbox_list</string>
+    <string name="tmaid_common_special_key" translatable="false">tmaid_common_special_key</string>
+    <string name="tmaid_common_open_link_browser" translatable="false">tmaid_common_open_link_browser</string>
+    <string name="tmaid_common_color_picker" translatable="false">tmaid_common_color_picker</string>
+    <string name="tmaid_common_time" translatable="false">tmaid_common_time</string>
+    <string name="tmaid_common_jump_to_bottom" translatable="false">tmaid_common_jump_to_bottom</string>
+    <string name="tmaid_common_search_in_content_of_current_file" translatable="false">tmaid_common_search_in_content_of_current_file</string>
+    <string name="tmaid_common_accordion" translatable="false">tmaid_common_accordion</string>
+
+    <string name="tmaid_markdown_quote" translatable="false">tmaid_markdown_quote</string>
+    <string name="tmaid_markdown_h1" translatable="false">tmaid_markdown_h1</string>
+    <string name="tmaid_markdown_h2" translatable="false">tmaid_markdown_h2</string>
+    <string name="tmaid_markdown_h3" translatable="false">tmaid_markdown_h3</string>
+    <string name="tmaid_markdown_bold" translatable="false">tmaid_markdown_bold</string>
+    <string name="tmaid_markdown_italic" translatable="false">tmaid_markdown_italic</string>
+    <string name="tmaid_markdown_strikeout" translatable="false">tmaid_markdown_strikeout</string>
+    <string name="tmaid_markdown_code_inline" translatable="false">tmaid_markdown_code_inline</string>
+    <string name="tmaid_markdown_horizontal_line" translatable="false">tmaid_markdown_horizontal_line</string>
+    <string name="tmaid_markdown_insert_image" translatable="false">tmaid_markdown_insert_image</string>
+    <string name="tmaid_markdown_insert_link" translatable="false">tmaid_markdown_insert_link</string>
+    <string name="tmaid_markdown_table_insert_columns" translatable="false">tmaid_markdown_table_insert_columns</string>
+
+    <string name="tmaid_todotxt_toggle_done" translatable="false">tmaid_todotxt_toggle_done</string>
+    <string name="tmaid_todotxt_add_context" translatable="false">tmaid_todotxt_add_context</string>
+    <string name="tmaid_todotxt_add_project" translatable="false">tmaid_todotxt_add_project</string>
+    <string name="tmaid_todotxt_priority" translatable="false">tmaid_todotxt_priority</string>
+    <string name="tmaid_todotxt_archive_done_tasks" translatable="false">tmaid_todotxt_archive_done_tasks</string>
+    <string name="tmaid_todotxt_current_date" translatable="false">tmaid_todotxt_current_date</string>
+    <string name="tmaid_todotxt_sort_todo" translatable="false">tmaid_todotxt_sort_todo</string>
+
+
+    <string name="jekyll_post" translatable="false">Jekyll Post</string>
+    <string name="zim_wiki" translatable="false">Zim Wiki</string>
+    <string name="pref_key__is_multi_window_enabled" translatable="false">pref_key__is_multi_window_enabled</string>
+    <string name="pref_key__is_enable_experimental_features" translatable="false">pref_key__is_enable_experimental_features</string>
+    <string name="pref_key__app_start_tab_v2" translatable="false">pref_key__app_start_tab_v2</string>
+    <string name="pref_key__app_start_folder" translatable="false">pref_key__app_start_folder</string>
+    <string name="pref_key__swipe_to_change_mode" translatable="false">pref_key__swipe_to_change_mode</string>
+    <string name="pref_key__filesystem_folder_first" translatable="false">pref_key__filesystem_folder_first</string>
+    <string name="pref_key__show_dot_files" translatable="false">pref_key__show_dot_files</string>
+    <string name="pref_key__tab_width_v2" translatable="false">pref_key__tab_width_v2</string>
+    <string name="pref_key__editor_enable_line_breaking" translatable="false">pref_key__editor_enable_line_breaking</string>
+    <string name="pref_key__exts_to_always_open_in_this_app" translatable="false">pref_key__exts_to_always_open_in_this_app</string>
+    <string name="pref_key__is_debug_log_enabled" translatable="false">pref_key__is_debug_log_enabled</string>
+    <string name="pref_key__view_font_size" translatable="false">pref_key__view_font_size</string>
+    <string name="pref_key__view_mode_link_color" translatable="false">pref_key__view_mode_link_color</string>
+    <string name="features" translatable="false">Features</string>
+    <string name="file_template__md_markor_markdown_reference" translatable="false">markor-markdown-reference.md</string>
+    <string name="file_template__md_jekyll_post" translatable="false">2029-01-01-jekyll-post.md</string>
+    <string name="file_template__md_cooking_recipe" translatable="false">cooking-recipe.md</string>
+    <string name="file_template__txt_todo_sample" translatable="false">todo.example.txt</string>
+    <string name="file_template__txt_zim_wiki" translatable="false">zim-wiki.txt</string>
+    <string name="file_template__md_hugo_post_front_matter" translatable="false">hugo-post-front-matter.md</string>
+    <string name="file_template__md_presentation_beamer" translatable="false">presentation-beamer.md</string>
+    <string name="key_value" translatable="false">Key - Value</string>
+    <string name="ohm" translatable="false">Ohm (Ω)</string>
+    <string name="debug" translatable="false">Debug</string>
+    <string name="text" translatable="false">Text</string>
+    <string name="inject" translatable="false">Inject</string>
+    <string name="char_punctation_mark_arrows" translatable="false">Punctuation mark (»«)</string>
+    <string name="indent" translatable="false">Indent</string>
+    <string name="deindent" translatable="false">De-indent</string>
+    <string name="assets" translatable="false">Assets</string>
+    <string name="audio" translatable="false">Audio</string>
+    <string name="continued_overline" translatable="false">Continued overline (‾‾‾‾)</string>
+    <string name="shrug" translatable="false">Shrug (¯\_(ツ)_/¯)</string>
+    <string name="accordion" translatable="false">Accordion</string>
+</resources>

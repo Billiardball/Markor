@@ -1,0 +1,159 @@
+/*#######################################################
+ *
+ *   Maintained by Gregor Santner, 2017-
+ *   https://gsantner.net/
+ *
+ *   License of this file: Apache 2.0 (Commercial upon request)
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+#########################################################*/
+apply plugin: 'com.android.application'
+if (enable_plugin_kotlin) {
+    apply plugin: 'kotlin-android'
+    apply plugin: 'kotlin-android-extensions'
+    apply plugin: 'kotlin-kapt'
+}
+
+rootProject.ext.version_minSdk = 16
+
+// https://github.com/vsch/flexmark-java/releases
+ext.version_library_flexmark = "0.42.10"
+
+android {
+    buildToolsVersion rootProject.ext.version_buildTools
+    compileSdkVersion rootProject.ext.version_compileSdk
+
+    defaultConfig {
+        resValue "string", "manifest_package_id", "net.gsantner.markor"
+        applicationId "net.gsantner.markor"
+        versionName "2.2.4"
+        versionCode 106
+
+        minSdkVersion rootProject.ext.version_minSdk
+        targetSdkVersion rootProject.ext.version_compileSdk
+        buildConfigField "boolean", "IS_TEST_BUILD", "false"
+        buildConfigField "boolean", "IS_GPLAY_BUILD", "false"
+        buildConfigField "String[]", "DETECTED_ANDROID_LOCALES", "${findUsedAndroidLocales()}"
+        buildConfigField "String", "BUILD_DATE", "\"${getBuildDate()}\""
+        buildConfigField "String", "GITHASH", "\"${getGitHash()}\""
+        setProperty("archivesBaseName", applicationId + "-v" + versionCode + "-" + versionName)
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        flavorAtest {
+            applicationId "net.gsantner.markor_test"
+            versionCode = Integer.parseInt(new Date().format('yyMMdd'))
+            versionName = new Date().format('yyMMdd')
+            buildConfigField "boolean", "IS_TEST_BUILD", "true"
+        }
+        flavorDefault {
+        }
+        flavorGplay {
+            buildConfigField "boolean", "IS_GPLAY_BUILD", "true"
+        }
+    }
+
+    sourceSets {
+        main { assets.srcDirs = ['src/main/assets'] }
+        if (enable_plugin_kotlin) {
+            main.java.srcDirs += 'src/main/kotlin'
+        }
+        main.java.srcDirs += 'thirdparty/java'
+        main.res.srcDirs += 'thirdparty/res'
+        main.assets.srcDirs += 'thirdparty/assets'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            eachDependency { details ->
+                if (details.requested.group == 'com.android.support') {
+                    if (details.requested.name != 'multidex' && details.requested.name != 'multidex-instrumentation') {
+                        details.useVersion "${rootProject.ext.version_library_appcompat}"
+                    }
+                }
+            }
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE-LGPL-2.1.txt'
+        exclude 'META-INF/LICENSE-LGPL-3.txt'
+        exclude 'META-INF/LICENSE-W3C-TEST'
+    }
+
+    compileOptions {
+        encoding = 'UTF-8'
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+        disable 'InvalidPackage'
+        abortOnError false
+    }
+}
+
+dependencies {
+    // Testing
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.assertj:assertj-core:3.13.1'
+
+    // Android standard libs
+    implementation "com.android.support:appcompat-v7:${version_library_appcompat}"
+    implementation "com.android.support:design:${version_library_appcompat}"
+    implementation "com.android.support:support-v4:${version_library_appcompat}"
+    implementation "com.android.support:recyclerview-v7:${version_library_appcompat}"
+    implementation "com.android.support:palette-v7:${version_library_appcompat}"
+    implementation "com.android.support:preference-v7:${version_library_appcompat}"
+    implementation "com.android.support:preference-v14:${version_library_appcompat}"
+    implementation "com.android.support:customtabs:${version_library_appcompat}"
+
+    // Markdown convertor (Flexmark)
+    implementation "com.vladsch.flexmark:flexmark:${version_library_flexmark}"
+    implementation "com.vladsch.flexmark:flexmark-util:${version_library_flexmark}"
+    implementation "com.vladsch.flexmark:flexmark-ext-emoji:${version_library_flexmark}"
+    implementation "com.vladsch.flexmark:flexmark-ext-gfm-tasklist:${version_library_flexmark}"
+    implementation "com.vladsch.flexmark:flexmark-ext-superscript:${version_library_flexmark}"
+    implementation "com.vladsch.flexmark:flexmark-ext-autolink:${version_library_flexmark}"
+    implementation "com.vladsch.flexmark:flexmark-ext-toc:${version_library_flexmark}"
+    implementation "com.vladsch.flexmark:flexmark-ext-tables:${version_library_flexmark}"
+    implementation "com.vladsch.flexmark:flexmark-ext-jekyll-front-matter:${version_library_flexmark}"
+    implementation "com.vladsch.flexmark:flexmark-ext-jekyll-tag:${version_library_flexmark}"
+    implementation "com.vladsch.flexmark:flexmark-ext-anchorlink:${version_library_flexmark}"
+    implementation "com.vladsch.flexmark:flexmark-ext-gfm-strikethrough:${version_library_flexmark}"
+    implementation "com.vladsch.flexmark:flexmark-ext-yaml-front-matter:${version_library_flexmark}"
+    implementation "com.vladsch.flexmark:flexmark-ext-footnotes:${version_library_flexmark}"
+
+    // UI libs
+    implementation 'com.pixplicity.generate:library:1.1.8'
+    implementation 'com.github.AppIntro:AppIntro:4.2.3'
+    implementation 'com.kailashdabhi:om-recorder:1.1.5'
+    implementation 'com.github.QuadFlask:colorpicker:0.0.13'
+    implementation 'com.github.mertakdut:EpubParser:1.0.95'
+
+    // Tool libraries
+    implementation "com.jakewharton:butterknife:${version_library_butterknife}"
+    implementation 'commons-io:commons-io:2.6'
+    if (enable_plugin_kotlin) {
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${version_plugin_kotlin}"
+    }
+
+    // Processors
+    def anpros = ["com.jakewharton:butterknife-compiler:${version_library_butterknife}"]
+    for (anpro in anpros) {
+        if (enable_plugin_kotlin) {
+            kapt anpro
+        } else {
+            annotationProcessor anpro
+        }
+    }
+}

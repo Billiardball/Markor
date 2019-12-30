@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/*#######################################################
+ *
+ *   Maintained by Gregor Santner, 2017-
+ *   https://gsantner.net/
+ *
+ *   License of this file: Apache 2.0 (Commercial upon request)
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+#########################################################*/
+-->
+<full-backup-content xmlns:tools="http://schemas.android.com/tools">
+    <include
+        domain="sharedpref"
+        path="." />
+    <exclude
+        domain="sharedpref"
+        path="pirate.xml"
+        tools:ignore="FullBackupContent" />
+</full-backup-content>
+

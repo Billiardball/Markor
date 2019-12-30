@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/*#######################################################
+ *
+ *   Maintained by Gregor Santner, 2017-
+ *   https://gsantner.net/
+ *
+ *   License of this file: Apache 2.0 (Commercial upon request)
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+#########################################################*/
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="net.gsantner.markor.activity.DocumentEditFragment"
+    tools:showIn="@layout/document__activity">
+
+    <ScrollView
+        android:id="@+id/document__fragment__edit__content_editor__scrolling_parent"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/textactions_bar_height"
+        android:fillViewport="true">
+
+        <net.gsantner.markor.ui.hleditor.HighlightingEditor
+            android:id="@+id/document__fragment__edit__highlighting_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textMultiLine|textCapSentences"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="120dp"
+            android:scrollbars="vertical"
+            android:textCursorDrawable="@drawable/cursor_accent"
+            tools:ignore="UnusedAttribute" />
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/document__fragment__edit__text_actions_bar__scrolling_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textactions_bar_height"
+        android:layout_gravity="bottom"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:id="@+id/document__fragment__edit__text_actions_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/document__fragment__edit__content_editor__permission_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#F8D507"
+        android:minHeight="@dimen/textactions_bar_height"
+        android:padding="12dp"
+        android:text="@string/warning_disallowed_sd_access"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/document__fragment_view_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+A project by Gregor Santner (https://gsantner.net)
+
+To the extent possible under law, the person who associated CC0 with
+this file has waived all copyright and related or neighboring rights
+to the public domain.
+
+You should have received a copy of the CC0 legalcode along with this
+work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="settings">Settings</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="delete">Delete</string>
+    <string name="appearance">Appearance</string>
+    <string name="rename">Rename</string>
+    <string name="confirm_delete">Confirm Delete</string>
+    <string name="do_you_really_want_to_delete_this_witharg">Do you really want to delete this %s?</string>
+    <string name="confirm_overwrite">Confirm Overwrite</string>
+    <string name="file_already_exists_overwerite">File already exists, overwrite?</string>
+    <string name="browse_filesystem">Browse filesystem</string>
+    <string name="title">Title</string>
+    <string name="empty_directory">Empty directory</string>
+    <string name="enter_name_of_folder">Enter the name of your folder</string>
+    <string name="create_folder">Create Folder</string>
+    <string name="create_new_document">Create new document</string>
+    <string name="move">Move</string>
+    <string name="info">Info</string>
+    <string name="file_folder_already_exists_please_use_a_different_name">File/folder already exists! Please use a different name</string>
+
+    <string name="import_from_device">Import from device</string>
+    <string name="import_">Import</string>
+    <string name="append_to_witharg">Append to %s</string>
+    <string name="select_folder">Select folder</string>
+    <string name="edit">Edit</string>
+
+    <string name="search_documents">Search documents</string>
+    <string name="share_to_arrow">Share to&#8230;</string>
+    <string name="share">Share</string>
+    <string name="search">Search</string>
+    <string name="display_converted_markup">Display converted markup</string>
+    <string name="editor">Editor</string>
+    <string name="folders">Folders</string>
+    <string name="files">Files</string>
+    <string name="document">Document</string>
+    <string name="documents">Documents</string>
+    <string name="html_as_plaintext">HTML (as plain text)</string>
+
+    <string name="document_editor_font">Document Editor Font</string>
+    <string name="theme">Theme</string>
+    <string name="open_existing_files_in_view_mode">Open existing files in view mode</string>
+    <string name="about">About</string>
+    <string name="plaintext">Plain Text</string>
+    <string name="file">File</string>
+    <string name="image">Image</string>
+    <string name="font_size">Font Size</string>
+    <string name="render_rtl_language">Render for right-to-left languages</string>
+    <string name="error_cannot_create_notebook_dir__appspecific">Error: Cannot create notebook directory</string>
+
+    <string name="last_modified_witharg">Last modified: %s</string>
+    <string name="select_this_folder">Select this folder</string>
+    <string name="select">Select</string>
+    <string name="create">Create</string>
+    <string name="select_entries">Select entries</string>
+    <string name="one_item_selected">One item selected</string>
+    <string name="items_selected_witharg" tools:ignore="PluralsCandidate">%d items selected</string>
+
+    <string name="hide_statusbar_at_this_view">Hide the statusbar in this view</string>
+    <string name="hide_statusbar">Hide statusbar</string>
+
+    <string name="name">Name</string>
+    <string name="url_or_path">URL / Path</string>
+    <string name="insert_link">Insert Link</string>
+    <string name="insert_image">Insert Image</string>
+
+    <string name="contributors">Contributors</string>
+    <string name="save_location">Save location</string>
+    <string name="select_storage_folder">Select storage folder</string>
+    <string name="licenses">Licenses</string>
+    <string name="changelog">Changelog</string>
+    <string name="more_info">More info</string>
+    <string name="show_license_of_the_app">Show license of the app</string>
+    <string name="show_third_party_licenses">Show 3rd party licenses</string>
+    <string name="language_change_restart_description">Change language of this app. Restart app for changes to take effect</string>
+    <string name="language">Language</string>
+    <string name="error_need_storage_permission_to_save_documents">Need permission for storage to save documents</string>
+    <string name="open_with">Open with</string>
+    <string name="sort">Sort by</string>
+    <string name="date">Date</string>
+    <string name="deleteme____1">Name</string>
+    <string name="size">Size</string>
+    <string name="reverse_order">Reverse order</string>
+    <string name="contribute">Contribute</string>
+    <string name="donate">Donate</string>
+    <string name="project_page">Project page</string>
+    <string name="press_back_again_to_exit">Press \'Back\' again to exit</string>
+    <string name="exit">Exit</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="more">More</string>
+    <string name="notebook">Notebook</string>
+    <string name="help">Help</string>
+    <string name="todo_list">To-Do List</string>
+    <string name="task">Task</string>
+    <string name="category">Category</string>
+    <string name="context">Context</string>
+    <string name="list">List</string>
+    <string name="priority">Priority</string>
+    <string name="history">History</string>
+    <string name="sync">Sync</string>
+    <string name="search_or_custom">Search / Custom</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="clear">Clear</string>
+    <string name="due_date">Due date</string>
+    <string name="current_date">Current date</string>
+    <string name="archive">Archive</string>
+    <string name="add_task">Add task</string>
+    <string name="add_x_witharg">Add %s</string>
+    <string name="document_to_be_loaded_and_saved_as_witharg">Document to be loaded and saved as "%s"</string>
+    <string name="refresh">Refresh</string>
+    <string name="create_shortcut">Create shortcut</string>
+    <string name="tried_to_create_shortcut_for_this_notice">Tried to create a shortcut to your home screen. Note that some launchers may not support this.</string>
+    <string name="file_not_in_save_path_do_import_notice__appspecific">The selected file is not located in the app\'s notebook directory. Do you want to copy it to the current folder? This will overwrite any existing file with the same name.</string>
+    <string name="file_not_in_current_folder_do_copy__appspecific">The file is not located in the current folder. Do you want to copy it to the current folder? This will overwrite any existing file with the same name.</string>
+    <string name="files_and_folders">Files and folders</string>
+    <string name="document_browser">Document browser</string>
+    <string name="file_browser">File browser</string>
+
+    <string name="create_note" needed="false">Create Note</string>
+    <string name="special_documents" needed="false">Special documents</string>
+    <string name="keep_screen_on" needed="false">Keep screen on</string>
+    <string name="back_to_previous_folder" needed="false">Back to previous folder</string>
+    <string name="app_settings" needed="false">App Settings</string>
+    <string name="editor_settings" needed="false">Editor Settings</string>
+    <string name="remember_last_folder_location_on_startup" needed="false">Remember last folder location on startup</string>
+    <string name="number_of_files_witharg" needed="false">Number of files: %d</string>
+
+    <string name="app_wide">App-wide</string>
+    <string name="main_view">Main View</string>
+    <string name="overall_theme_used_in_app">The overall theme used in the app</string>
+    <string name="remember_last_directory">Remember last directory</string>
+    <string name="syntax_highlighting">Syntax highlighting</string>
+    <string name="highlighting_delay">Highlighting delay</string>
+    <string name="highlighting_delay_lower_value_more_battery_drain_description__appspecific">Delay in milliseconds for highlighting refresh. A lower value will start highlighting earlier, but it will drain your battery and may slow down the app on older devices.</string>
+    <string name="highlighting_enabled_or_not__appspecific">Control whether entered text should be highlighted or not</string>
+    <string name="control_font_size_in_editor">Control the font size used in the editor</string>
+    <string name="textactions_show_useful_actions_description__appspecific">Show a bar with handy buttons on bottom. These textactions modify the text or run an action based on the text.</string>
+    <string name="load_last_opened_folder_at_startup">Load the last opened folder at startup</string>
+    <string name="format">Format</string>
+    <string name="contexts">Contexts</string>
+    <string name="project">Project</string>
+    <string name="projects">Projects</string>
+    <string name="categories">Categories</string>
+    <string name="none">None</string>
+    <string name="other">Other</string>
+    <string name="alternative_naming">Alternative naming</string>
+    <string name="empty_file">Empty file</string>
+    <string name="break_page_pdf_print">Break page (PDF/Printing)</string>
+    <string name="underline">Underline</string>
+
+
+    <string name="underline_hex_color_wether_or_not_to_description__appspecific">Whether to underline hex color codes according to color</string>
+    <string name="underline_hex_color_codes">Underline Hex Color Codes</string>
+    <string name="insert_current_date_when_starting_new_task">Insert the current date when starting a new task</string>
+    <string name="tasks_with_todays_date">Tasks with today\'s date</string>
+    <string name="append_contexts_and_projects">Append contexts and projects</string>
+    <string name="append_contexts_and_projects_on_end_of_task">Append contexts and projects at the end of a task when using the appropriate textaction</string>
+    <string name="rtl_rendering">RTL rendering</string>
+    <string name="highlight_line_ending">Highlight line ending</string>
+    <string name="highlight_line_ending_if_two_or_more_spaces">Highlight spaces at the end of lines containing two or more spaces</string>
+    <string name="use_monospace_for_code">Use monospace font for code</string>
+    <string name="use_different_fonttype_slow_down">Make use of a different font type. Changing it dynamically impacts app performance.</string>
+    <string name="general">General</string>
+    <string name="resources">Resources</string>
+    <string name="space_between_lines_in_percent">Space between lines in percent</string>
+    <string name="line_spacing">Line Spacing</string>
+    <string name="archive_does_move_done_tasks">Move done tasks to specified file in same folder</string>
+    <string name="sort_tasks_by_selected_order">Sort tasks by selected order</string>
+    <string name="special_key">Special Key</string>
+    <string name="key_page_up">Page Up (Page Up)</string>
+    <string name="key_page_down">Page Down (Page Down)</string>
+    <string name="move_text_one_line_up">Move text one line up</string>
+    <string name="move_text_one_line_down">Move text one line down</string>
+    <string name="key_pos_1">Line Start (Pos Home)</string>
+    <string name="key_pos_end">Line End (Pos End)</string>
+    <string name="key_pos_1_document">Document Start</string>
+    <string name="key_pos_end_document">Document End</string>
+    <string name="key_ctrl_a">Select all (Ctrl+A)</string>
+    <string name="key_tab">Tabulator</string>
+    <string name="start_on_bottom">Start on bottom</string>
+    <string name="start_on_bottom_when_loading_document">Upon loading a document, position cursor at its end</string>
+    <string name="filemanager_doesnot_supply_required_data__appspecific">Markor can only edit local, offline available documents and does not support file managers that do not provide the full file path.</string>
+    <string name="sync_to_local_folder_notice">Note: Sync apps may place files in custom folders. Open them by changing Markor\'s document folder accordingly, or in another file manager.</string>
+    <string name="configure_in_the_apps_settings">Configure in the app settings</string>
+    <string name="vertical_alignment">Vertical alignment</string>
+    <string name="horizontal_alignment">Horizontal alignment</string>
+    <string name="default_">Default</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="top">Top</string>
+    <string name="bottom">Bottom</string>
+    <string name="center">Center</string>
+    <string name="textaction_spacing">Textaction spacing</string>
+    <string name="horizontal_space_between_textactions">Horizontal space between textaction buttons</string>
+
+    <string name="center_text">Center text</string>
+    <string name="edit_text_in_center_of_screen">Edit text in the center of the screen</string>
+    <string name="clipboard">Clipboard</string>
+    <string name="select_existing_document">Select existing document</string>
+    <string name="open_source_licenses">Open Source Licenses</string>
+    <string name="rate_this_app">Rate this app</string>
+    <string name="translate">Translate</string>
+    <string name="more_info_and_help">More info and help</string>
+    <string name="report_bugs">Report bugs</string>
+    <string name="more_info_on_how_to_donate_or_otherwise_support_this_project_text">More info on donating to the developer, or contributing to this project.</string>
+
+
+    <string name="join_community">Join the Community</string>
+    <string name="bug_reports_suggest_improvements">Give feedback, report bugs or suggest improvements</string>
+    <string name="help_translating_this_app">Translate this app into other languages</string>
+    <string name="source_code">Source Code</string>
+    <string name="project_license">Project License</string>
+    <string name="project_contribution_info">Project contribution info</string>
+    <string name="more_info_on_how_to_contribute_to_this_project">More info on how to contribute to this project</string>
+    <string name="contribute_code_to_this_project_anybody_welcome">Contribute code to the project. Everybody is welcome to do so, including newcomers</string>
+    <string name="project_team">Project Team</string>
+    <string name="contributors_public_add_yourself_description">Show contributor info. Provide it to be shown here on an opt-in basis after contributing</string>
+
+    <string name="descending">descending</string>
+    <string name="ascending">ascending</string>
+
+    <string name="disable_spelling_underline">Disable spelling underline</string>
+    <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Keyboard suggestions stay, red underline vanishes</string>
+    <string name="location">Location</string>
+    <string name="text_lines">Text Lines</string>
+    <string name="text_characters">Text Characters</string>
+    <string name="text_words">Text Words</string>
+    <string name="directory">Directory</string>
+    <string name="recently_viewed_documents">Recently viewed documents</string>
+    <string name="details">Details</string>
+    <string name="calendar">Calendar</string>
+    <string name="warning_disallowed_sd_access">Warning! The app doesn\'t have the permission to save this file, all changes will be lost. There is no possibility to resolve the problem or to confirm something, Android denies any access here.</string>
+    <string name="error_picture_selection">No picture selected, taken or saved.</string>
+    <string name="gallery_picture">Gallery picture</string>
+    <string name="camera_picture">Camera picture</string>
+    <string name="enable_undo_and_redo_be_patient">Enable undo and redo actions. Only suited for advanced use, be patient to not delete something important. Close and open editor to clear history.</string>
+    <string name="description">Description</string>
+    <string name="edit_picture">Edit picture</string>
+    <string name="math">Math</string>
+    <string name="table_of_contents">Table of contents</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="textaction">Textaction</string>
+    <string name="textactions">Textactions</string>
+    <string name="prefer_view">Prefer view</string>
+    <string name="no_calendar_app_is_installed">No calendar app is installed!</string>
+    <string name="popular_documents">Popular documents</string>
+    <string name="color">Color</string>
+    <string name="zero_width_space">Zero-width space</string>
+    <string name="basic_color_scheme">Basic color scheme</string>
+    <string name="background_foreground_color_in_editor_works_dark_light">Changes background and foreground color of the text editor. Adjusts to app theme so available in light and dark theme. Syntax highlighting colors remain the same.</string>
+    <string name="preset">Preset</string>
+    <string name="foreground">Foreground</string>
+    <string name="background">Background</string>
+    <string name="set_foreground_or_background_color_hexcolor_also_possible">Set foreground or background color of text? Inserting hex color code is also possible.</string>
+    <string name="type">Type</string>
+    <string name="folder">Folder</string>
+    <string name="folder_is_created_without_extension">- Folder is created without file extension</string>
+    <string name="keep_existing_file">- Files and folders are not overwritten</string>
+    <string name="multiple_windows">Multiple windows</string>
+    <string name="font">Font</string>
+    <string name="open_new_documents_always_in_new_window">Open documents always in separate windows. Switch using the \'recents\' key of your device.</string>
+    <string name="enter_or_select_format">Enter or select format</string>
+    <string name="pick_date">Pick date</string>
+    <string name="pick_time">Pick time</string>
+    <string name="get_format_instead_date_or_time">Get format instead date or time</string>
+    <string name="always_use_current_date_and_time">Always use current date &amp; time</string>
+    <string name="result">Result</string>
+    <string name="just_time">Time only</string>
+    <string name="just_date">Date only</string>
+    <string name="last_used">Last used</string>
+    <string name="my_note">my_note</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="do_you_like_this_project_want_donate_to_keep_alive">Do you enjoy this project? Do you want to support further improvements and bug fixes?\n\nDeveloping apps and writing related blog posts take a lot of time! If you want to help the project to continue, please consider a small donation!\n\nThis project is developed in spare time, completely for free and without any advertisements!</string>
+    <string name="app_start_tab">App start tab</string>
+    <string name="tab_to_select_at_start">Tab to select when starting the app</string>
+    <string name="swipe_to_change_mode">Swipe to change mode</string>
+    <string name="swipe_to_change_to_edit_or_view_mode">Swipe to change to edit or view mode (opposite of the current mode)</string>
+    <string name="folder_first">Folder first</string>
+    <string name="go_to">Go to</string>
+    <string name="appdata_public">AppData (public)</string>
+    <string name="appdata_private">AppData (private)</string>
+    <string name="appdata_sdcard">AppData (SD Card)</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="open_the_document_from_main_view">You can open the document from main view on the bottom, the file browser or the launcher. There is also a option to append text shared into Markor.</string>
+    <string name="notebook_is_the_home_of_your_files">Notebook is the folder that Markor loads in the file browser when the app is started. It is the home folder of your files.</string>
+    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote is the fastest option to write down notes. It is a file in Markdown format with default location &gt;Notebook/QuickNote.md&lt;, you can set a custom filepath in the settings.</string>
+    <string name="todo_is_the_easiest_way_">Manage your tasks with ToDo. It is a file in todo.txt format with default location &gt;Notebook/todo.txt&lt;, you can set a custom filepath in the settings.</string>
+    <string name="navigationbar_color">Navigationbar color</string>
+    <string name="black">Black</string>
+    <string name="white">White</string>
+    <string name="view">View</string>
+    <string name="view_mode">View mode</string>
+    <string name="edit_mode">Edit mode</string>
+    <string name="mount_storage">Mount storage</string>
+    <string name="application_needs_access_to_storage_mount_it">Permission is required to access this storage. Mount the storage to give access. Confirm this dialog to get a popup. Select the storage there and press select.</string>
+    <string name="share_into">Share into</string>
+    <string name="favourite">Favourite</string>
+    <string name="favourites">Favourites</string>
+    <string name="please_wait">Please wait</string>
+    <string name="app_start_folder">App start folder</string>
+    <string name="tab_width">Tab width</string>
+    <string name="amount_of_space_for_tab">Amount of space characters to display tabulator</string>
+    <string name="selected_file_may_be_a_textfile_want_to_open_in_editor">The selected file may be a plaintext file.Do you want to open it in the editor, or in another app?\n\nDo not try to open binary files. If you are not sure, open with other app.</string>
+    <string name="list_in_recent_files">List in recent files</string>
+    <string name="reload">Reload</string>
+    <string name="wrap_words">Wrap words</string>
+    <string name="soft_break_if_not_fit_to_width_else_enable_horizontal_scrolling">Soft break if text doesn\'t fit to screen width. Else enable horizontal scrolling.</string>
+    <string name="recursive_search_in_current_directory">Recursive search in current directory. When query contains a asterisk (*) regex search is used, otherwise check if the query is contained.</string>
+    <string name="always_open_with_this_app">Always open with this app</string>
+    <string name="always_open_files_with_this_app_when_list_contains_file_extension">Always open files with this app when the list contains the file extension. Use \'None, .html, .css , .js\' for example if you want to edit web files and those without file extension.</string>
+    <string name="template">Template</string>
+    <string name="send_debug_log">Send Debug Log</string>
+    <string name="help_by_sending_debug_information_to_the_developer">Help by sending debug information to developer(s). Data is sent by email via your email app and you can see all sent data prior to sending. You will find an additional \"Send debug log\" option in top menu when enabled. It creates the email draft.</string>
+    <string name="print_pdf">Print / PDF</string>
+    <string name="bigger_headings">Bigger headings</string>
+    <string name="increase_text_size_of_headings_according_to_level">Increase text size of headers according to level (# h1, ## h2. ### h3…)</string>
+    <string name="current">Current</string>
+    <string name="record_audio">Record Audio</string>
+    <string name="attach">Attach</string>
+    <string name="copy_file">Copy file</string>
+    <string name="page">Page</string>
+    <string name="experimental_features">Experimental features</string>
+    <string name="tools">Tools</string>
+    <string name="reading">Reading</string>
+    <string name="read">Read</string>
+    <string name="table">Table</string>
+    <string name="how_much_columns_press_table_button_long_to_start_table">How much columns? Press table button long to start a table (insert header), press short to add a row.</string>
+    <string name="example_of_a_markdown_table">Example of a Markdown table</string>
+    <string name="delete_lines">Delete lines</string>
+    <string name="unordered_list">Unordered list</string>
+    <string name="ordered_list">Ordered list</string>
+    <string name="check_list">Check list</string>
+    <string name="open_link">Open link</string>
+    <string name="common_color_picker">Color picker</string>
+    <string name="date_and_time">Date and time</string>
+    <string name="jump_to_bottom">Jump to bottom</string>
+    <string name="quote">Quote</string>
+    <string name="heading">Heading</string>
+    <string name="heading_1">Heading 1</string>
+    <string name="heading_2">Heading 2</string>
+    <string name="heading_3">Heading 3</string>
+    <string name="bold">Bold</string>
+    <string name="italic">Italic</string>
+    <string name="strikeout">Strike out</string>
+    <string name="inline_code">Inline code</string>
+    <string name="horizontal_line">Horizontal line</string>
+    <string name="toggle_done">Toggle done</string>
+    <string name="link_color">Link color</string>
+    <string name="add_context">Add context</string>
+    <string name="add_project">Add project</string>
+    <string name="archive_completed_tasks">Archive completed tasks</string>
+    <string name="sort_alphabetically">Sort alphabetically</string>
+    <string name="create_new_file_or_folder">Create a new file or folder</string>
+    <string name="choose_format">Choose format</string>
+    <string name="selected">Selected</string>
+    <string name="back">Back</string>
+    <string name="expand_collapse">Expand / Collapse</string>
+    <string name="essential">Essential</string>
+</resources>

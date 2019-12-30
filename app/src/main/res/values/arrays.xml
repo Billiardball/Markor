@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/*#######################################################
+ *
+ *   Maintained by Gregor Santner, 2017-
+ *   https://gsantner.net/
+ *
+ *   License of this file: Apache 2.0 (Commercial upon request)
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+#########################################################*/
+-->
+<resources>
+    <string-array name="pref_arrdisp__app_themes" translatable="false">
+        <item translatable="false">@string/auto</item>
+        <item translatable="false">@string/light</item>
+        <item translatable="false">@string/dark</item>
+    </string-array>
+
+    <string-array name="pref_arrkeys__app_themes" translatable="false">
+        <item translatable="false">@string/app_theme_auto</item>
+        <item translatable="false">@string/app_theme_light</item>
+        <item translatable="false">@string/app_theme_dark</item>
+    </string-array>
+
+    <string-array name="pref_arrdisp__editor_basic_color_schemes" translatable="false">
+        <item translatable="false">@string/editor_basic_color_scheme_markor</item>
+        <item translatable="false">@string/editor_basic_color_scheme_black_or_white</item>
+        <item translatable="false">@string/editor_basic_color_scheme_solarized</item>
+    </string-array>
+
+    <string-array name="pref_arrdisp__bottomnav" translatable="false">
+        <item translatable="false">@string/notebook</item>
+        <item translatable="false">@string/todo</item>
+        <item translatable="false">@string/quicknote</item>
+    </string-array>
+
+    <string-array name="textactions_press_key__text" translatable="false">
+        <item translatable="false">@string/key_page_up</item>
+        <item translatable="false">@string/key_page_down</item>
+        <item translatable="false">@string/key_pos_1</item>
+        <item translatable="false">@string/key_pos_end</item>
+        <item translatable="false">@string/move_text_one_line_up</item>
+        <item translatable="false">@string/move_text_one_line_down</item>
+        <item translatable="false">@string/key_pos_1_document</item>
+        <item translatable="false">@string/key_pos_end_document</item>
+        <item translatable="false">@string/key_ctrl_a</item>
+        <item translatable="false">@string/key_tab</item>
+        <item translatable="false">@string/search</item>
+        <item translatable="false">@string/zero_width_space</item>
+        <item translatable="false">@string/break_page_pdf_print</item>
+        <item translatable="false">@string/ohm</item>
+        <item translatable="false">@string/char_punctation_mark_arrows</item>
+        <item translatable="false">@string/indent</item>
+        <item translatable="false">@string/deindent</item>
+        <item translatable="false">@string/shrug</item>
+        <item translatable="false">@string/continued_overline</item>
+    </string-array>
+
+    <string-array name="new_file_types" translatable="false">
+        <item translatable="false">@string/markdown</item>
+        <item translatable="false">@string/plaintext</item>
+        <item translatable="false">@string/todo_txt</item>
+        <item translatable="false">@string/none</item>
+        <item translatable="false">@string/jekyll_post</item>
+    </string-array>
+
+    <string-array name="arr_file_templates" translatable="false">
+        <item translatable="false">@string/empty_file</item>
+        <item translatable="false">@string/file_template__md_markor_markdown_reference</item>
+        <item translatable="false">@string/file_template__txt_todo_sample</item>
+        <item translatable="false">@string/file_template__md_jekyll_post</item>
+        <item translatable="false">@string/file_template__md_cooking_recipe</item>
+        <item translatable="false">@string/file_template__md_presentation_beamer</item>
+        <item translatable="false">@string/file_template__txt_zim_wiki</item>
+        <item translatable="false">@string/file_template__md_hugo_post_front_matter</item>
+    </string-array>
+
+    <string-array name="new_file_types__file_extension" translatable="false">
+        <item translatable="false">.md</item>
+        <item translatable="false">.txt</item>
+        <item translatable="false">.todo.txt</item>
+        <!--suppress CheckTagEmptyBody -->
+        <item translatable="false"></item>
+        <item translatable="false">.md</item>
+    </string-array>
+
+    <string-array name="pref_arrdisp__files_startup_folder" translatable="false">
+        <item translatable="false">@string/notebook</item>
+        <item translatable="false">@string/favourites</item>
+        <item translatable="false">@string/internal_storage</item>
+        <item translatable="false">@string/appdata_public</item>
+        <item translatable="false">@string/appdata_private</item>
+        <item translatable="false">@string/popular_documents</item>
+        <item translatable="false">@string/recently_viewed_documents</item>
+    </string-array>
+
+    <string-array name="pref_arrkeys__files_startup_folder" translatable="false">
+        <item translatable="false">notebook</item>
+        <item translatable="false">favourites</item>
+        <item translatable="false">internal_storage</item>
+        <item translatable="false">appdata_public</item>
+        <item translatable="false">appdata_private</item>
+        <item translatable="false">popular_documents</item>
+        <item translatable="false">recently_viewed_documents</item>
+    </string-array>
+</resources>

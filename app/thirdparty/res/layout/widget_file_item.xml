@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/*#######################################################
+ * Copyright (c) 2014 Jeff Martin
+ * Copyright (c) 2015 Pedro Lafuente
+ * Copyright (c) 2017-2019 Gregor Santner
+ *
+ * Licensed under the MIT license.
+ * You can get a copy of the license text here:
+ *   https://opensource.org/licenses/MIT
+###########################################################*/
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:baselineAligned="false"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    tools:ignore="KeyboardInaccessibleWidget,RtlHardcoded">
+
+    <TextView
+        android:id="@+id/widget_note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_file_gray_24dp"
+        android:drawableStart="@drawable/ic_file_gray_24dp"
+        android:ellipsize="end"
+        android:gravity="center|start"
+        android:minHeight="19sp"
+        android:singleLine="true"
+        android:textColor="#f7504d54"
+        android:textSize="16sp" />
+</LinearLayout>

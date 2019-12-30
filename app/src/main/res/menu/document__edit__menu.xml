@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/*#######################################################
+ *
+ *   Maintained by Gregor Santner, 2017-
+ *   https://gsantner.net/
+ *
+ *   License of this file: Apache 2.0 (Commercial upon request)
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+#########################################################*/
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AlwaysShowAction">
+
+
+    <item
+        android:id="@+id/submenu_attach"
+        android:icon="@drawable/ic_attach_file_black_24dp"
+        android:title="@string/attach"
+        android:visible="false"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_attach_link"
+                android:icon="@drawable/ic_link_black_24dp"
+                android:title="@string/insert_link" />
+            <item
+                android:id="@+id/action_attach_file"
+                android:icon="@drawable/ic_file_white_24dp"
+                android:title="@string/file" />
+            <item
+                android:id="@+id/action_attach_image"
+                android:icon="@drawable/ic_image_black_24dp"
+                android:title="@string/image" />
+            <item
+                android:id="@+id/action_attach_audio"
+                android:icon="@drawable/ic_keyboard_voice_black_24dp"
+                android:title="@string/audio" />
+            <item
+                android:id="@+id/action_attach_date"
+                android:icon="@drawable/ic_date_range_black_24dp"
+                android:title="@string/date" />
+            <item
+                android:id="@+id/action_attach_color"
+                android:icon="@drawable/ic_format_color_fill_black_24dp"
+                android:title="@string/color" />
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/action_undo"
+        android:icon="@drawable/ic_undo_black_24dp"
+        android:title="@string/undo"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_redo"
+        android:icon="@drawable/ic_redo_black_24dp"
+        android:title="@string/redo"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_preview_edit_toggle"
+        android:icon="@drawable/ic_visibility_black_24dp"
+        android:title="@string/view"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_preview"
+        android:icon="@drawable/ic_visibility_black_24dp"
+        android:title="@string/view_mode"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_edit_black_24dp"
+        android:title="@string/edit_mode"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/search"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_search_view"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView" />
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_save_black_24dp"
+        android:title="@string/save"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/submenu_share"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="@string/share"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/action_share_text"
+                android:icon="@drawable/ic_file_white_24dp"
+                android:title="@string/plaintext" />
+            <item
+                android:id="@+id/action_share_pdf"
+                android:icon="@drawable/ic_print_black_24dp"
+                android:title="@string/print_pdf"
+                android:visible="false" />
+            <item
+                android:id="@+id/action_share_file"
+                android:icon="@drawable/ic_file_white_24dp"
+                android:title="@string/file" />
+            <item
+                android:id="@+id/action_share_html"
+                android:icon="@drawable/ic_code_black_24dp"
+                android:title="@string/share_html__mime_html" />
+            <item
+                android:id="@+id/action_share_html_source"
+                android:icon="@drawable/ic_code_black_24dp"
+                android:title="@string/html_as_plaintext" />
+            <item
+                android:id="@+id/action_share_image"
+                android:icon="@drawable/ic_image_black_24dp"
+                android:title="@string/image" />
+            <item
+                android:id="@+id/action_share_calendar_event"
+                android:icon="@drawable/ic_date_range_black_24dp"
+                android:title="@string/calendar" />
+            <item
+                android:id="@+id/action_add_shortcut_launcher_home"
+                android:icon="@drawable/ic_widgets_black_24dp"
+                android:title="@string/create_shortcut"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/submenu_format_selection"
+        android:icon="@drawable/ic_format_shapes_black_24dp"
+        android:title="@string/format"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/action_format_markdown"
+                android:title="@string/markdown" />
+            <item
+                android:id="@+id/action_format_plaintext"
+                android:title="@string/plaintext" />
+            <item
+                android:id="@+id/action_format_todotxt"
+                android:title="@string/todo_txt" />
+            <item
+                android:id="@+id/action_format_keyvalue"
+                android:title="@string/key_value" />
+        </menu>
+    </item>
+    <item
+        android:visible="false"
+        android:id="@+id/submenu_tools"
+        android:icon="@drawable/ic_format_shapes_black_24dp"
+        android:title="@string/tools"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:visible="false"
+                android:id="@+id/action_load_epub"
+                android:title="Convert &amp; load epub" />
+            <item
+                android:visible="false"
+                android:id="@+id/action_speed_read"
+                android:title="Speed Read" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_reload"
+        android:icon="@drawable/ic_redo_black_24dp"
+        android:title="@string/reload"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_send_debug_log"
+        android:icon="@drawable/ic_bug_report_black_24dp"
+        android:title="@string/send_debug_log"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>

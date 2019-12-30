@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/*#######################################################
+ *
+ *   Maintained by Gregor Santner, 2017-
+ *   https://gsantner.net/
+ *
+ *   License of this file: Apache 2.0 (Commercial upon request)
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+#########################################################*/
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AlwaysShowAction">
+
+    <item
+        android:id="@+id/action_favourite"
+        android:icon="@drawable/ic_star_border_black_24dp"
+        android:title="@string/favourite"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_favourite_remove"
+        android:icon="@drawable/ic_star_black_24dp"
+        android:title="@string/favourite"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_fs_copy_to_clipboard"
+        android:icon="@drawable/ic_content_copy_black_24dp"
+        android:title="@string/clipboard"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rename_selected_item"
+        android:icon="@drawable/ic_gs_rename_black_24dp"
+        android:title="@string/rename"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_delete_selected_items"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:title="@string/delete"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_info_selected_item"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="@string/details"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_move_selected_items"
+        android:icon="@drawable/ic_gs_file_move_black_24dp"
+        android:title="@string/move"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_share_files"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="@string/share"
+        android:visible="false"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_go_to"
+        android:layout_width="match_parent"
+        android:icon="@drawable/ic_folder_white_24dp"
+        android:title="@string/go_to"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/action_go_to_appdata_sdcard_1"
+                android:icon="@drawable/ic_sd_card_black_24dp"
+                android:title="@string/appdata_sdcard"
+                android:visible="false"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_go_to_appdata_sdcard_2"
+                android:icon="@drawable/ic_sd_card_black_24dp"
+                android:title="@string/appdata_sdcard"
+                android:visible="false"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_go_to_appdata_private"
+                android:icon="@drawable/ic_lock_outline_black_24dp"
+                android:title="@string/appdata_private"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_go_to_appdata_public"
+                android:icon="@drawable/ic_lock_open_black_24dp"
+                android:title="@string/appdata_public"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_go_to_storage"
+                android:icon="@drawable/ic_storage_black_24dp"
+                android:title="@string/internal_storage"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_go_to_recent_files"
+                android:icon="@drawable/ic_history_black_24dp"
+                android:title="@string/recently_viewed_documents"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_go_to_popular_files"
+                android:icon="@drawable/ic_favorite_black_24dp"
+                android:title="@string/popular_documents"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_go_to_favourite_files"
+                android:icon="@drawable/ic_star_black_24dp"
+                android:title="@string/favourites"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_go_to_home"
+                android:icon="@drawable/ic_folder_white_24dp"
+                android:title="@string/notebook"
+                app:showAsAction="never" />
+        </menu>
+
+    </item>
+
+
+    <item
+        android:id="@+id/action_sort"
+        android:layout_width="match_parent"
+        android:icon="@drawable/ic_sort_black_24dp"
+        android:title="@string/sort"
+        app:showAsAction="always">
+
+        <menu>
+            <group
+                android:id="@+id/action_grp_sort1"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/action_sort_by_name"
+                    android:icon="@drawable/ic_sort_by_alpha_black_24dp"
+                    android:title="@string/deleteme____1"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/action_sort_by_date"
+                    android:icon="@drawable/ic_date_range_black_24dp"
+                    android:title="@string/date"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/action_sort_by_filesize"
+                    android:icon="@drawable/ic_sort_black_24dp"
+                    android:title="@string/size"
+                    app:showAsAction="never" />
+            </group>
+            <group
+                android:id="@+id/action_grp_sort2"
+                android:checkableBehavior="all">
+                <item
+                    android:id="@+id/action_folder_first"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_folder_white_24dp"
+                    android:title="@string/folder_first"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/action_sort_reverse"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_rotate_left_black_24dp"
+                    android:title="@string/reverse_order"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/action_show_dotfiles"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_visibility_black_24dp"
+                    android:title="@string/dotfiles"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_import"
+        android:icon="@drawable/ic_file_white_24dp"
+        android:title="@string/import_from_device"
+        app:showAsAction="never" />
+
+</menu>
